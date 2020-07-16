@@ -1,0 +1,19 @@
+//HTML Code (input.html)
+
+<html>
+    <head>
+        <title>Taking input from User</title><
+        <script src="input.js"> </script>
+    </head>
+    <body>
+        <p>Inspect this page and open console <br />to see the input you have given.</p>
+    </body>
+</html>
+
+
+//JS Code (input.js)
+
+var inputValue = prompt("Please enter your input", "");
+if (inputValue!= null) {
+    console.log(inputValue);
+}

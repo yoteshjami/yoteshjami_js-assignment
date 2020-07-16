@@ -1,0 +1,23 @@
+//HTML Code
+
+<html>
+    <head>
+        <title>Input Age</title>
+        <script src="age.js"></script>
+    </head>
+    <body>
+        <p>Inspect this page and open console <br />
+           to see the output for the corresponding input you have given.</p>
+    </body>
+</html>
+
+
+
+//JS Code
+
+var age=prompt("Please enter your age here ","");
+if(age>21){
+  console.log("Can drink");
+}else{
+  console.log("Cannot Drink");
+}

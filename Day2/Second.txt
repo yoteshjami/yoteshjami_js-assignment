@@ -1,0 +1,134 @@
+String Methods :
+
+
+1. Search()
+
+Searches a string for a specified value, or regular expression, and returns the position of the match
+
+Example :
+
+var str = "Hey guys,are you rocking??";
+var pos = str.search("you"); // output : 13
+
+2. slice()
+
+slice() extracts a part of a string and returns the extracted part in a new string. The method takes 2 parameters: the start position, and the end position (end not included).
+
+Example :
+
+var str = "Hey guys,are you rocking??";
+var res = str.slice(4,8); // output : guys
+
+3. substring() 
+
+substring() is similar to slice(). The difference is that substring() cannot accept negative indexes.
+
+Example :
+
+var str = "Hey guys,are you rocking??";
+var res = str.substring(9, 13); // output : are
+
+
+4. substr()
+
+substr() is similar to slice(). The difference is that the second parameter specifies the length of the extracted part.
+
+Example :
+
+var str = "Hey guys,are you rocking??";
+var res = str.substr(9,16); // output : are you rocking?
+
+5. Replace()
+
+The replace() method replaces a specified value with another value in a string.
+
+Example :
+
+var str = "Hey guys,are you rocking??";
+var res = str.replace("guys", "folks"); // output : Hey folks,are you rocking??
+
+6. concat()
+
+Example :
+
+concat() joins two or more strings.The concat() method can be used instead of the plus operator.
+
+Example :
+
+var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2); // output : Hello World
+
+Array Methods:
+
+
+1. filter()
+
+The filter() method creates an array filled with all array elements that pass a test (provided as a function). 
+filter() does not execute the function for array elements without values. filter() does not change the original array.
+
+Example :
+
+var ages = [32, 33, 16, 40];
+function checkAdult(age) {
+  return age >= 18;
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.filter(checkAdult); // output : 32,33,40
+}
+
+2. every()
+
+The every() method checks if all elements in an array pass a test (provided as a function). The every() method executes the function once for each element present in the array.
+If it finds an array element where the function returns a false value, every() returns false (and does not check the remaining values). If no false occur, every() returns true
+
+Example :
+
+var ages = [32, 33, 16, 40];
+function checkAdult(age) {
+  return age >= 18;
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.every(checkAdult); // output : false
+}
+
+3. join()
+
+The join() method returns the array as a string. The elements will be separated by a specified separator. The default separator is comma (,).
+
+Example :
+
+var lang = ["Python", "Java", "Ruby", "SQL"];
+var prog = lang.join(); // Python,Java,Ruby,SQL
+
+4. reduce()
+The reduce() method reduces the array to a single value.
+The reduce() method executes a provided function for each value of the array (from left-to-right). The return value of the function is stored in an accumulator (result/total).
+
+Example :
+
+var numbers = [175, 50, 25];
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc); //output : 100
+function myFunc(total, num) {
+  return total - num;
+}
+5. sort()
+
+The sort() method sorts the items of an array.
+The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+By default, the sort() method sorts the values as strings in alphabetical and ascending order.
+
+Example :
+
+var lang = ["Python", "Java", "Ruby", "SQL"];
+lang.sort(); // output : Java,Python,Ruby,SQL
+
+6. includes()
+
+The includes() method determines whether an array contains a specified element.
+This method returns true if the array contains the element, and false if not. The includes() method is case sensitive.
+
+Example :
+
+var lang = ["Python", "Java", "Ruby", "SQL"];
+var res = lang.includes("Ruby"); // output : true
