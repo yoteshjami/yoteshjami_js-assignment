@@ -1,0 +1,31 @@
+//HTML CODE (grade.html)
+
+
+<html>
+    <head>
+        <title>Input Age</title>
+        <script src="grade.js"></script>
+    </head>
+    <body>
+        <p>Inspect this page and open console <br />
+           to see the output for the corresponding input you have given.</p>
+    </body>
+</html>
+
+
+//JS CODE (grade.js)
+
+// Using Conditional Statements
+
+var marks=prompt("Enter your marks here...","");
+var g;
+if(marks>50) g='A';
+else g='B';
+console.log(`Marks are ${marks} and grade is ${g}`);
+
+
+//Using ternary
+
+var marks=prompt("Enter your marks here...","");
+var g = (marks>50) ? 'A' : 'B';
+console.log(`Marks are ${marks} and grade is ${g}`);

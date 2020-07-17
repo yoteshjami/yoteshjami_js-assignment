@@ -1,0 +1,21 @@
+/ HTML CODE (EvenOdd.html)
+
+<html>
+    <head>
+        <title>Even or Odd</title>
+        <script src="EvenOdd.js"></script>
+    </head>
+    <body>
+        <p>Inspect this page and open console <br />
+            to see the output for the corresponding input you have given.</p>
+    </body>
+</html>
+
+
+//JS CODE (EvenOdd.js)
+
+var number=prompt("Please enter a number here ","");
+if(number%2==0)
+    console.log(`The number entered is ${number} and Number is even`);
+else
+console.log(`The number entered is ${number} and Number is odd`);

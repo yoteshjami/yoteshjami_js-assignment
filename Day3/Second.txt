@@ -1,0 +1,17 @@
+//HTML CODE (osversion.html)
+
+<html>
+    <head>
+        <title>Input Age</title>
+        <script src="osversion.js"></script>
+    </head>
+    <body>
+        <p>Inspect this page and open console <br />
+           to see the output for the corresponding input you have given.</p>
+    </body>
+</html>
+
+//JS CODE (osversion.js)
+
+var str=prompt("Enter your OS Version here","");
+console.log(`The OS name is ${str.substr(0,str.indexOf(" "))} and version is ${str.substr(str.indexOf(" "),str.length-1)}`);
